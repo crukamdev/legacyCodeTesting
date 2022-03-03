@@ -7,8 +7,9 @@ namespace Composer\Autoload;
 class ComposerStaticInit820e20efcf0b61b469ae100c75072fb9
 {
     public static $files = array (
-        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -20,9 +21,17 @@ class ComposerStaticInit820e20efcf0b61b469ae100c75072fb9
         array (
             'Webmozart\\Assert\\' => 17,
         ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+        ),
         'R' => 
         array (
             'Ramsey\\Uuid\\' => 12,
+        ),
+        'P' => 
+        array (
+            'Prophecy\\' => 9,
         ),
         'D' => 
         array (
@@ -39,16 +48,24 @@ class ComposerStaticInit820e20efcf0b61b469ae100c75072fb9
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
+        ),
+        'Prophecy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -67,10 +84,6 @@ class ComposerStaticInit820e20efcf0b61b469ae100c75072fb9
     public static $prefixesPsr0 = array (
         'P' => 
         array (
-            'Prophecy\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
-            ),
             'Pagerfanta\\' => 
             array (
                 0 => __DIR__ . '/..' . '/pagerfanta/pagerfanta/src',
@@ -86,6 +99,7 @@ class ComposerStaticInit820e20efcf0b61b469ae100c75072fb9
     );
 
     public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
